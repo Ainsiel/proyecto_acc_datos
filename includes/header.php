@@ -12,5 +12,6 @@
       <div class="container">
         <a class="navbar-brand" href="index.php">Productos</a>
         <a class="navbar-brand" href="rol/roles.php">Roles</a>
+        <a class="navbar-brand" href="usuario/usuarios.php">Usuarios</a>
       </div>
     </nav>
