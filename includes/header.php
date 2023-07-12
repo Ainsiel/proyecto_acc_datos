@@ -15,5 +15,6 @@
         <a class="navbar-brand" href="usuario/usuarios.php">Usuarios</a>
         <a class="navbar-brand" href="membresia/membresias.php">Membresias</a>
         <a class="navbar-brand" href="socio/socios.php">Socios</a>
+        <a class="navbar-brand" href="stock/stocks.php">Stocks</a>
       </div>
     </nav>
