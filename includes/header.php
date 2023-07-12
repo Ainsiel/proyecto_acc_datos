@@ -11,5 +11,6 @@
     <nav class="navbar navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="index.php">Productos</a>
+        <a class="navbar-brand" href="rol/roles.php">Roles</a>
       </div>
     </nav>
