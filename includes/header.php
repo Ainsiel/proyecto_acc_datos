@@ -13,5 +13,6 @@
         <a class="navbar-brand" href="index.php">Productos</a>
         <a class="navbar-brand" href="rol/roles.php">Roles</a>
         <a class="navbar-brand" href="usuario/usuarios.php">Usuarios</a>
+        <a class="navbar-brand" href="membresia/membresias.php">Membresias</a>
       </div>
     </nav>

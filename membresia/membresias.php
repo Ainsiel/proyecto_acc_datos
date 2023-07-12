@@ -14,20 +14,14 @@
 
       <!-- ADD TASK FORM -->
       <div class="card card-body">
-        <form action="save_usuario.php" method="POST">
+        <form action="save_membresia.php" method="POST">
           <div class="form-group">
-            <input type="text" name="nombre" class="form-control" placeholder="Nombre" autofocus>
+            <input type="text" name="tipo" class="form-control" placeholder="Tipo membresia" autofocus>
           </div>
           <div class="form-group">
-            <input type="text" name="email" class="form-control" placeholder="Email" autofocus>
+            <input type="text" name="dias" class="form-control" placeholder="Dias membresia" autofocus>
           </div>
-          <div class="form-group">
-            <input type="password" name="contrasenia" class="form-control" placeholder="Password" autofocus>
-          </div>
-          <div class="form-group">
-            <input type="text" name="id_rol" class="form-control" placeholder="ID Rol" autofocus>
-          </div>
-          <input type="submit" name="save_usuario" class="btn btn-success btn-block" value="Guardar Usuario">
+          <input type="submit" name="save_membresia" class="btn btn-success btn-block" value="Guardar Membresia">
         </form>
       </div>
     </div>
@@ -38,9 +32,8 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>Nombre</th>
-            <th>Email</th>
-            <th>ID Rol</th>
+            <th>Tipo</th>
+            <th>Dias</th>
           </tr>
         </thead>
         <tbody>
@@ -48,14 +41,13 @@
           <?php
           include "../db.php";
           $link = AbrirConexion();
-          $query = "SELECT * FROM usuario";
+          $query = "SELECT * FROM membresia";
           $result = EjecutarConsulta($query,$link);    
 
           while($fila=mysqli_fetch_array($result)) { ?>
           <tr>
-            <td><?php echo $fila['nombre']; ?></td>
-            <td><?php echo $fila['email']; ?></td>
-            <td><?php echo $fila['id_rol']; ?></td>
+            <td><?php echo $fila['tipo']; ?></td>
+            <td><?php echo $fila['dias']; ?></td>
           </tr>
           <?php } ?>
         </tbody>
