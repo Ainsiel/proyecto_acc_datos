@@ -12,6 +12,7 @@
             <th>Año</th>
             <th>Editorial</th>
             <th>Precio</th>
+            <th>Accion</th>
           </tr>
         </thead>
         <tbody>
@@ -30,6 +31,14 @@
             <td><?php echo $fila['anio_publicacion']; ?></td>
             <td><?php echo $fila['editorial']; ?></td>
             <td><?php echo $fila['precio']; ?></td>
+            <td>
+              <a href="producto/edit_producto.php?id=<?php echo $fila['id']?>" class="btn btn-secondary">
+                <i class="fas fa-marker"></i>
+              </a>
+              <a href="producto/delete_producto.php?id=<?php echo $fila['id']?>" class="btn btn-danger">
+                <i class="far fa-trash-alt"></i>
+              </a>
+            </td>
           </tr>
           <?php } ?>
         </tbody>
